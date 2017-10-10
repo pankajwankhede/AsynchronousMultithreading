@@ -13,12 +13,14 @@ and then just start your tasks asynchronously like that:
 
 
   //Schedeuler             Function to call 
+  
   schedeuler.runAsync(() -> someFunction());
 
 
 If you want to delay it:
 
   //Schedeuler             Function to call    Delay Timeunit
+  
   schedeuler.run(() -> someFunction(), 1L, TimeUnit.MINUTES);
 
 
@@ -26,6 +28,7 @@ And finally if you want it to be repeating:
 
 
   //Schedeuler             Function to call    Delay RepeatingDelay Timeunit
+  
   schedeuler.runRepeating(() -> someFunction(), 0L, 1L, TimeUnit.MINUTES);
 
 
